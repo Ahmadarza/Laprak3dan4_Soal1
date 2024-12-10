@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPORAN TEORI</title>
+    <link rel="stylesheet" href="Assets/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #eff2f5;
+            color: #003366;
+        }
+
+        .sidebar {
+            height: 100vh;
+            padding-top: 1rem;
+            background-color: #98bae9;
+            border-right: 1px solid #ccc;
+        }
+
+        .sidebar-heading {
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #003366;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav-item a {
+            padding: 0.75rem 1rem;
+            display: block;
+            color: #003366;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav-item a:hover,
+        .nav-item a.active {
+            background-color: #b5d3ec;
+            color: #0056b3;
+        }
+
+        h1 {
+            color: #003366;
+        }
+
+        h2 {
+            color: #003366; 
+        }
+
+        #content h3 {
+            font-weight: bold;
+            color: #003366;
+        }
+
+        #content p,
+        #content ul,
+        #content pre {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        #content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        #content pre {
+            background-color: #d0dae5;
+            padding: 1rem;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        hr {
+            border: 1px solid #dbeeff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+                <div class="position-sticky">
+                    <h2 class="sidebar-heading">Soal Praktikum</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" data-soal="soal1">A. Penjelasan Konsep Dasar PHP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-soal="soal2">B. Perbandingan GET dan POST</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-soal="soal3">C. Penggunaan include, require, dan koneksi PHP dengan MySQL</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <h1 class="mt-4">LAPORAN TEORI</h1>
+                <h2>Ahmad Miftahul Arza Firisky | 202331067</h2>
+                <hr>
+                <div id="content">
+                    <p>Silahkan Anda Pilih Soal Yang Terdapat Pada Sidebar Untuk Melihat Jawabannya!</p>
+                </div>
+                <div id="content">
+                    <div class="soal" data-soal="soal1" style="display: none;">
+                        <h3>A. Penjelasan Konsep Dasar PHP</h3>
+                        <p><b>a. Jelaskan apa itu PHP.</b></p>
+                        <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman yang dirancang khusus untuk pengembangan aplikasi web. PHP biasanya digunakan untuk membuat situs web dinamis dan memiliki kemampuan untuk menyisipkan kode langsung ke dalam file HTML, sehingga memudahkan pengembang web untuk menggabungkan kode pemrograman dengan markup.</p>
+                        <p><b>b. Sebutkan keuntungan PHP dibandingkan dengan bahasa pemrograman lainnya dalam konteks pengembangan web.</b></p>
+                        <ul>
+                            <li>Mudah Dipelajari dan Digunakan: PHP dirancang untuk pengembangan web, sehingga sintaksnya sederhana dan mudah dipahami.</li>
+                            <li>Cross-Platform: PHP bisa dijalankan di berbagai platform seperti Windows, Linux, dan macOS, Menjadikannya fleksibel dan dapat diimplementasikan di lingkungan server yang berbeda.</li>
+                            <li>Open Source: PHP adalah perangkat lunak open-source, sehingga tidak memerlukan biaya lisensi dan dapat digunakan oleh siapa saja.</li>
+                            <li>Kinerja yang baik: PHP dapat menangani aplikasi web dengan lalu lintas tinggi.</li>
+                            <li>Integrasi yang Mudah: PHP kompatibel dengan berbagai jenis database seperti MySQL dan dapat dengan mudah diintegrasikan dengan teknologi web lain seperti HTML, CSS, dan JavaScript.</li>
+                            <li>Stabil dan Teruji.</li>
+                        </ul>
+                    </div>
+                    <div class="soal" data-soal="soal2" style="display: none;">
+                        <h3>B. Perbandingan GET dan POST</h3>
+                        <p><b>a. Jelaskan perbedaan antara metode GET dan POST dalam penggunaan di sebuah website.</b></p>
+                        <ul>
+                            <li><b>Perbedaan GET:</b></li>
+                            <ul>
+                                <li>History: Parameter/nilai tersimpan di browser dan bisa diakses ulang karena nilai menjadi bagian dari URL.</li>
+                                <li>Bookmark: Parameter bisa dibookmark.</li>
+                                <li>Tombol Kembali/Kirim Ulang: Halaman sebelumnya langsung ditampilkan tanpa mengeksekusi ulang karena tersimpan dalam cache browser.</li>
+                                <li>Parameters: Hanya bisa mengirimkan parameter melalui URL.</li>
+                                <li>Keamanan: Lebih terbuka karena data terlihat.</li>
+                                <li>Penggunaan: Digunakan lebih untuk kebutuhan mengambil data.</li>
+                                <li>Besar Data yang Dikirim: Memiliki batasan panjang.</li>
+                            </ul>
+                            <li><b>Perbedaan POST:</b></li>
+                            <ul>
+                                <li>History: Parameter/nilai tidak tersimpan di browser.</li>
+                                <li>Bookmark: Parameter/nilai tidak dapat dibookmark.</li>
+                                <li>Tombol Kembali/Kirim Ulang: Browser biasanya memberi peringatan/menanyakan apakah data akan dikirim ulang.</li>
+                                <li>Parameters: Dapat mengirimkan parameter URL sekaligus mengirimkan data tersembunyi ke server.</li>
+                                <li>Keamanan: Lebih sulit diakses karena data tersembunyi.</li>
+                                <li>Penggunaan: Digunakan untuk mengirim data yang lebih rahasia seperti password.</li>
+                                <li>Besar Data yang Dikirim: Tidak memiliki batasan yang ketat seperti GET.</li>
+                            </ul>
+                        </ul>
+                        <p><b>b. Berikan contoh kasus penggunaan yang tepat untuk masing-masing metode.</b></p>
+                        <ul>
+                            <li><b>GET:</b> Pencarian di Google, Menampilkan Daftar Produk, Filter atau Sortir Data.</li>
+                            <li><b>POST:</b> Login atau Registrasi Akun, Mengisi Formulir Online, Melakukan Pembelian, Upload File.</li>
+                        </ul>
+                    </div>
+                    <div class="soal" data-soal="soal3" style="display: none;">
+                        <h3>C. Penggunaan Include, Require, dan Koneksi PHP dengan MySQL</h3>
+                        <p><b>a. Jelaskan fungsi include dan require dalam PHP, termasuk perbedaan mendasar antara keduanya.</b></p>
+                        <p>Include Jika file yang disertakan tidak ditemukan atau terjadi kesalahan, PHP akan memberikan warning tetapi tetap melanjutkan eksekusi skrip. Dan Require Jika file yang disertakan tidak ditemukan atau terjadi kesalahan, PHP akan menghasilkan fatal error dan menghentikan eksekusi skrip.</p>
+                        <p><b>b. Berikan contoh implementasi sederhana untuk menyambungkan PHP dengan database MySQL.</b></p>
+                        <pre>
+                        &lt;?php
+                        $host = "localhost"; 
+                        $username = "root";  
+                        $password = "";      
+                        $dbname = "test_db"; 
+                
+                        $conn = new mysqli($host, $username, $password, $dbname);
+                
+                        if ($conn->connect_error) {
+                            die("Koneksi gagal: " . $conn->connect_error);
+                        }
+                        echo "Koneksi berhasil";
+                
+                        $conn->close();
+                        ?&gt;
+                        </pre>
+                        <p><b>c. Mengapa penggunaan include dan require penting dalam pengelolaan kode program yang besar dan kompleks?</b></p>
+                        <ul>
+                            <li>Modularitas Kode</li>
+                            <li>Pengurangan Redundansi</li>
+                            <li>Peningkatan Keamanan</li>
+                            <li>Peningkatan Pemeliharaan Kode</li>
+                            <li>Reusabilitas Kode</li>
+                            <li>Pengelolaan Dependensi</li>
+                        </ul>
+                    </div>
+                </div>                
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="Assets/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
